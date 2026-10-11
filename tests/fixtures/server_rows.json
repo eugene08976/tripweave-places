@@ -1,0 +1,1061 @@
+{
+ "note": "Rows for the server's {bali,taiwan,us}-mini.sqlite fixtures, in the extract layout (FORMAT.md section 8). Real rows from Overture 2026-09-23.1 plus four synthetic ones (gers 00000000-0000-4000-9000-...). Build with: python build/fixture.py tests/fixtures/server_rows.json --out <dir>",
+ "bali": [
+  {
+   "gers": "2d1106d1-11d6-47e4-b91a-d79c8c7ea92e",
+   "name": "SIA - Grill & Seafood Bar",
+   "basic_category": "restaurant",
+   "tax_primary": "seafood_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "seafood_restaurant"
+   ],
+   "confidence": 0.8806,
+   "operating_status": null,
+   "addr": "Jl. Subak Canggu",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 115.13771057128906,
+   "lat": -8.65359878540039,
+   "name_en": []
+  },
+  {
+   "gers": "f58f3f2a-e1b5-4ae4-8d8c-2337689c5bf5",
+   "name": "Obsidian Gym Bali",
+   "basic_category": "gym",
+   "tax_primary": "gym",
+   "tax_hierarchy": [
+    "sports_and_recreation",
+    "sport_or_fitness_facility",
+    "gym"
+   ],
+   "confidence": 0.8412,
+   "operating_status": null,
+   "addr": "Jl. Raya Canggu",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 115.13668823242188,
+   "lat": -8.632570266723633,
+   "name_en": []
+  },
+  {
+   "gers": "b5051a25-851e-4827-80e0-2f6b43dbcfbf",
+   "name": "Obsidian II",
+   "basic_category": "gym",
+   "tax_primary": "gym",
+   "tax_hierarchy": [
+    "sports_and_recreation",
+    "sport_or_fitness_facility",
+    "gym"
+   ],
+   "confidence": 0.77,
+   "operating_status": null,
+   "addr": "Jl. Raya Canggu, Pererenan, Kec. Mengwi, Kabupaten Badung, Bali 80351",
+   "locality": "Kabupaten Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Foursquare",
+     "license": "Apache-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 1,
+   "lng": 115.1369857788086,
+   "lat": -8.632743835449219,
+   "name_en": []
+  },
+  {
+   "gers": "f452ca90-c37a-40a0-9b78-119b50f41127",
+   "name": "Obsidian Fitness Studio ",
+   "basic_category": "gym",
+   "tax_primary": "gym",
+   "tax_hierarchy": [
+    "sports_and_recreation",
+    "sport_or_fitness_facility",
+    "gym"
+   ],
+   "confidence": 0.6852,
+   "operating_status": null,
+   "addr": "Jalan Sempol 26",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": 115.13614654541016,
+   "lat": -8.63982105255127,
+   "name_en": []
+  },
+  {
+   "gers": "4c045dc9-6e2f-4abc-8996-477883cda102",
+   "name": "FINNS Beach Party Restaurant",
+   "basic_category": null,
+   "tax_primary": null,
+   "tax_hierarchy": null,
+   "confidence": 0.9888,
+   "operating_status": null,
+   "addr": "Jl Pantai Berawa 99",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": 115.13953399658203,
+   "lat": -8.666850090026855,
+   "name_en": []
+  },
+  {
+   "gers": "282fcd44-c6f0-40f5-894c-54387348727f",
+   "name": "Finns Rec Club",
+   "basic_category": "park",
+   "tax_primary": "water_park",
+   "tax_hierarchy": [
+    "sports_and_recreation",
+    "park",
+    "water_park"
+   ],
+   "confidence": 0.9811,
+   "operating_status": null,
+   "addr": "Jalan Pantai Berawa 32",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": 115.1474380493164,
+   "lat": -8.654850006103516,
+   "name_en": []
+  },
+  {
+   "gers": "a6827faa-575b-4740-b313-cdda5f5b2cce",
+   "name": "Finns Recreation Club",
+   "basic_category": "fairgrounds",
+   "tax_primary": "fairgrounds",
+   "tax_hierarchy": [
+    "arts_and_entertainment",
+    "festival_venue",
+    "fairgrounds"
+   ],
+   "confidence": 0.9629,
+   "operating_status": null,
+   "addr": "Jl. Pantai Berawa No. 15, Canggu, Tibubeneng, Kuta Utara, Tibubeneng",
+   "locality": "Kec. Kuta Utara, Kabupaten Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": 115.14767456054688,
+   "lat": -8.662318229675293,
+   "name_en": []
+  },
+  {
+   "gers": "27bf74be-7023-41af-822b-16de9aa72051",
+   "name": "FINNS VIP Party",
+   "basic_category": "beach",
+   "tax_primary": "beach",
+   "tax_hierarchy": [
+    "geographic_entities",
+    "land_feature",
+    "beach"
+   ],
+   "confidence": 0.9515,
+   "operating_status": null,
+   "addr": "District Canggu, Jalan Pantai Berawa 99",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 115.1387939453125,
+   "lat": -8.666125297546387,
+   "name_en": []
+  },
+  {
+   "gers": "bbf8503f-d939-4ada-9a46-1bd3d2512408",
+   "name": "Finns Tennis",
+   "basic_category": "sport_court",
+   "tax_primary": "tennis_court",
+   "tax_hierarchy": [
+    "sports_and_recreation",
+    "sport_or_fitness_facility",
+    "sport_court",
+    "tennis_court"
+   ],
+   "confidence": 0.9015,
+   "operating_status": null,
+   "addr": "Jl. Pantai Berawa",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": 115.14895629882812,
+   "lat": -8.652320861816406,
+   "name_en": []
+  },
+  {
+   "gers": "79e88b9c-d9e8-4151-a2f5-509987d4f104",
+   "name": "FINNS VIP Beach Club",
+   "basic_category": "sporting_goods_store",
+   "tax_primary": "sportswear_store",
+   "tax_hierarchy": [
+    "shopping",
+    "specialty_store",
+    "sporting_goods_store",
+    "sportswear_store"
+   ],
+   "confidence": 0.85,
+   "operating_status": null,
+   "addr": "Jl. Pantai Berawa No. 5, Banjar Berawa, Desa Tibubeneng, Tibubeneng, Kuta Utara",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": 115.14678192138672,
+   "lat": -8.661649703979492,
+   "name_en": []
+  },
+  {
+   "gers": "2cdb29df-fa4a-419f-b607-cc09caa5d396",
+   "name": "Mother Huckers Axe Club at Finns Recreation Club",
+   "basic_category": "fairgrounds",
+   "tax_primary": "fairgrounds",
+   "tax_hierarchy": [
+    "arts_and_entertainment",
+    "festival_venue",
+    "fairgrounds"
+   ],
+   "confidence": 0.85,
+   "operating_status": null,
+   "addr": "Jalan Pantai Berawa Canggu, Tibubeneng, Kec. Kuta Utara",
+   "locality": "Kabupaten Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": 115.14641571044922,
+   "lat": -8.662911415100098,
+   "name_en": []
+  },
+  {
+   "gers": "559b88c5-edf5-40a6-8c26-2f4ab7ca6ab8",
+   "name": "Finn's Beach Club",
+   "basic_category": "bar",
+   "tax_primary": "bar",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "alcoholic_beverage_venue",
+    "bar"
+   ],
+   "confidence": 0.6729,
+   "operating_status": null,
+   "addr": "Jalan Pantai Selatan Gau, Banjar Wijaya Kusuma",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": 115.15088653564453,
+   "lat": -8.847320556640625,
+   "name_en": []
+  },
+  {
+   "gers": "1bc84cf4-c7b3-4683-94a2-cb710d4d18c4",
+   "name": "FINNS Beach Party",
+   "basic_category": "professional_service",
+   "tax_primary": "professional_service",
+   "tax_hierarchy": [
+    "services_and_business",
+    "professional_service"
+   ],
+   "confidence": 0.6568,
+   "operating_status": null,
+   "addr": "Amy's Spa Canggu, Jalan Pantai Berawa 99",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 115.14081573486328,
+   "lat": -8.660171508789062,
+   "name_en": []
+  },
+  {
+   "gers": "d3a96a0a-f143-4a29-9c4b-6a974066fa03",
+   "name": "Batu Bolong Beach, Canggu",
+   "basic_category": "beach",
+   "tax_primary": "beach",
+   "tax_hierarchy": [
+    "geographic_entities",
+    "land_feature",
+    "beach"
+   ],
+   "confidence": 0.9471,
+   "operating_status": null,
+   "addr": "jalan pantai batu bolong",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 1,
+   "lng": 115.13072204589844,
+   "lat": -8.659270286560059,
+   "name_en": []
+  },
+  {
+   "gers": "ee9236bd-05ae-4778-9f52-95bb3739edf6",
+   "name": "Canggu",
+   "basic_category": "beach",
+   "tax_primary": "beach",
+   "tax_hierarchy": [
+    "geographic_entities",
+    "land_feature",
+    "beach"
+   ],
+   "confidence": 0.7611,
+   "operating_status": null,
+   "addr": "Jalan Raya Batu Belig",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 115.13416290283203,
+   "lat": -8.655834197998047,
+   "name_en": []
+  },
+  {
+   "gers": "d4fb73d2-b6ad-443e-b8c0-b758d3f083f7",
+   "name": "Grand Hyatt Bali",
+   "basic_category": "hotel",
+   "tax_primary": "hotel",
+   "tax_hierarchy": [
+    "lodging",
+    "hotel"
+   ],
+   "confidence": 0.9986,
+   "operating_status": null,
+   "addr": "Kawasan Wisata Nusa Dua ITDC",
+   "locality": "Badung",
+   "country": "ID",
+   "brand": "Grand Hyatt",
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": 115.23297882080078,
+   "lat": -8.803656578063965,
+   "name_en": []
+  },
+  {
+   "gers": "0f785dfd-dcef-406f-a468-44aa79f3f3f2",
+   "name": "Grand Hyatt Bali",
+   "basic_category": "hotel",
+   "tax_primary": "hotel",
+   "tax_hierarchy": [
+    "lodging",
+    "hotel"
+   ],
+   "confidence": 0.77,
+   "operating_status": null,
+   "addr": "Kawasan Wisata Nusa Dua Btdc",
+   "locality": "Bali",
+   "country": "ID",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Foursquare",
+     "license": "Apache-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 115.23314666748047,
+   "lat": -8.803508758544922,
+   "name_en": []
+  },
+  {
+   "gers": "00000000-0000-4000-9000-000000000001",
+   "name_en": [],
+   "name": "Astra Mart Sangsit",
+   "basic_category": "convenience_store",
+   "tax_primary": "convenience_store",
+   "tax_hierarchy": [
+    "shopping",
+    "convenience_store"
+   ],
+   "confidence": 0.97,
+   "lat": -8.090392,
+   "lng": 115.126099
+  },
+  {
+   "gers": "00000000-0000-4000-9000-000000000002",
+   "name_en": [],
+   "name": "Budi Astra Mart Sangsit",
+   "basic_category": "convenience_store",
+   "tax_primary": "convenience_store",
+   "tax_hierarchy": [
+    "shopping",
+    "convenience_store"
+   ],
+   "confidence": 0.95,
+   "lat": -8.090455,
+   "lng": 115.125969
+  },
+  {
+   "gers": "00000000-0000-4000-9000-000000000003",
+   "name_en": [],
+   "name": "Canggu Scooter Rental",
+   "basic_category": "auto_dealer",
+   "tax_primary": "auto_dealer",
+   "tax_hierarchy": [
+    "shopping",
+    "vehicle_dealer",
+    "auto_dealer"
+   ],
+   "confidence": 0.9,
+   "lat": -8.6512,
+   "lng": 115.1371
+  }
+ ],
+ "taiwan": [
+  {
+   "gers": "0896f008-f611-478c-bfda-539ad23edff4",
+   "name": "鼎泰豐",
+   "basic_category": "restaurant",
+   "tax_primary": "dim_sum_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "asian_restaurant",
+    "east_asian_restaurant",
+    "chinese_restaurant",
+    "dim_sum_restaurant"
+   ],
+   "confidence": 0.9946,
+   "operating_status": null,
+   "addr": "南京西路12號",
+   "locality": "台北市",
+   "country": "TW",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 121.52112579345703,
+   "lat": 25.052295684814453,
+   "name_en": []
+  },
+  {
+   "gers": "7d77d2a9-638f-49c6-be4b-77ef93919534",
+   "name": "鼎泰豐",
+   "basic_category": "restaurant",
+   "tax_primary": "chinese_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "asian_restaurant",
+    "east_asian_restaurant",
+    "chinese_restaurant"
+   ],
+   "confidence": 0.9913,
+   "operating_status": null,
+   "addr": "信義路二段194號",
+   "locality": "台北市",
+   "country": "TW",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 121.53010559082031,
+   "lat": 25.03345489501953,
+   "name_en": []
+  },
+  {
+   "gers": "0ebd52bf-3748-4a03-a8bb-b4919bb04fad",
+   "name": "鼎泰豐",
+   "basic_category": "restaurant",
+   "tax_primary": "chinese_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "asian_restaurant",
+    "east_asian_restaurant",
+    "chinese_restaurant"
+   ],
+   "confidence": 0.9879,
+   "operating_status": null,
+   "addr": "市府路45號",
+   "locality": "台北市",
+   "country": "TW",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 121.56414794921875,
+   "lat": 25.03348731994629,
+   "name_en": []
+  },
+  {
+   "gers": "d5bd820a-16b4-47b2-9023-4e8ab719c073",
+   "name": "A4鼎泰豐",
+   "basic_category": "restaurant",
+   "tax_primary": "chinese_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "asian_restaurant",
+    "east_asian_restaurant",
+    "chinese_restaurant"
+   ],
+   "confidence": 0.7896,
+   "operating_status": null,
+   "addr": "松高路19號",
+   "locality": "台北市",
+   "country": "TW",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 121.5668716430664,
+   "lat": 25.039941787719727,
+   "name_en": []
+  },
+  {
+   "gers": "d498aee8-8ec5-43b8-8319-5b55e792b510",
+   "name": "Din Tai Fung",
+   "basic_category": "restaurant",
+   "tax_primary": "taiwanese_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "asian_restaurant",
+    "east_asian_restaurant",
+    "taiwanese_restaurant"
+   ],
+   "confidence": 0.9003,
+   "operating_status": null,
+   "addr": "Songgao Rd, 19號Ｂ２",
+   "locality": "台北市",
+   "country": "TW",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 121.56664276123047,
+   "lat": 25.039478302001953,
+   "name_en": []
+  },
+  {
+   "gers": "c37d4602-fcec-4662-a210-e54f75b7e80d",
+   "name": "7-Eleven 凱悅門市",
+   "basic_category": "convenience_store",
+   "tax_primary": "convenience_store",
+   "tax_hierarchy": [
+    "shopping",
+    "convenience_store"
+   ],
+   "confidence": 0.9987,
+   "operating_status": null,
+   "addr": "Section 1, Keelung Rd, 398號1樓",
+   "locality": "台北市",
+   "country": "TW",
+   "brand": "7-Eleven",
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": 121.56019592285156,
+   "lat": 25.034257888793945,
+   "name_en": []
+  },
+  {
+   "gers": "00000000-0000-4000-9000-000000000004",
+   "name_en": [],
+   "name": "臺北鼎泰豐",
+   "basic_category": "restaurant",
+   "tax_primary": "restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant"
+   ],
+   "confidence": 0.9,
+   "lat": 25.041,
+   "lng": 121.565
+  }
+ ],
+ "us": [
+  {
+   "gers": "0937a23e-bb32-4687-830c-c6c9b7503078",
+   "name": "Joe's Pizza",
+   "basic_category": "restaurant",
+   "tax_primary": "pizza_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "european_restaurant",
+    "mediterranean_restaurant",
+    "italian_restaurant",
+    "pizza_restaurant"
+   ],
+   "confidence": 0.9953,
+   "operating_status": "open",
+   "addr": "150 E 14th St",
+   "locality": "New York",
+   "country": "US",
+   "brand": "Joe's Pizza",
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture-signals",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": -73.98771667480469,
+   "lat": 40.733184814453125,
+   "name_en": []
+  },
+  {
+   "gers": "d847c34f-b4dd-450a-b714-aa1c02ef6387",
+   "name": "Joe's Pizza",
+   "basic_category": "restaurant",
+   "tax_primary": "pizza_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "european_restaurant",
+    "mediterranean_restaurant",
+    "italian_restaurant",
+    "pizza_restaurant"
+   ],
+   "confidence": 0.9902,
+   "operating_status": "open",
+   "addr": "211 8th Ave",
+   "locality": "New York",
+   "country": "US",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture-signals",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": -73.9997329711914,
+   "lat": 40.74393844604492,
+   "name_en": []
+  },
+  {
+   "gers": "49785d59-529c-475d-b157-9179093b1792",
+   "name": "O'Brien's Pub",
+   "basic_category": "bar",
+   "tax_primary": "wine_bar",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "alcoholic_beverage_venue",
+    "bar",
+    "wine_bar"
+   ],
+   "confidence": 0.9199,
+   "operating_status": "open",
+   "addr": "604 Willis Ave",
+   "locality": "Williston Park",
+   "country": "US",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Foursquare",
+     "license": "Apache-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture-signals",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 3,
+   "lng": -73.6463394165039,
+   "lat": 40.76118850708008,
+   "name_en": []
+  },
+  {
+   "gers": "80fbcd90-8382-4fad-8931-14f33a6caf8c",
+   "name": "Trattoria Dell'Arte",
+   "basic_category": "restaurant",
+   "tax_primary": "italian_restaurant",
+   "tax_hierarchy": [
+    "food_and_drink",
+    "restaurant",
+    "european_restaurant",
+    "mediterranean_restaurant",
+    "italian_restaurant"
+   ],
+   "confidence": 0.9902,
+   "operating_status": "open",
+   "addr": "900 7th Ave",
+   "locality": "New York",
+   "country": "US",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "meta",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture-signals",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 4,
+   "lng": -73.98036193847656,
+   "lat": 40.765350341796875,
+   "name_en": []
+  },
+  {
+   "gers": "91f3772c-4f5f-412a-88d4-0d876e1b560f",
+   "name": "Central Parking",
+   "basic_category": "parking",
+   "tax_primary": "parking",
+   "tax_hierarchy": [
+    "travel_and_transportation",
+    "parking"
+   ],
+   "confidence": 0.9948,
+   "operating_status": null,
+   "addr": "267 W 47th St",
+   "locality": "New York",
+   "country": "US",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": -73.98706817626953,
+   "lat": 40.760231018066406,
+   "name_en": []
+  },
+  {
+   "gers": "92bdc677-7d47-4ed4-a9c1-e3e214c7f2d3",
+   "name": "Central Parking",
+   "basic_category": "parking",
+   "tax_primary": "parking",
+   "tax_hierarchy": [
+    "travel_and_transportation",
+    "parking"
+   ],
+   "confidence": 0.9902,
+   "operating_status": "open",
+   "addr": "213 E 43rd St",
+   "locality": "New York",
+   "country": "US",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture-signals",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": -73.97300720214844,
+   "lat": 40.75103759765625,
+   "name_en": []
+  },
+  {
+   "gers": "72367cdb-46f4-4c82-bb78-812ae66f0f78",
+   "name": "The Night Hotel",
+   "basic_category": "hotel",
+   "tax_primary": "hotel",
+   "tax_hierarchy": [
+    "lodging",
+    "hotel"
+   ],
+   "confidence": 0.9938,
+   "operating_status": "permanently_closed",
+   "addr": "132 W 45th St",
+   "locality": "New York",
+   "country": "US",
+   "brand": null,
+   "brand_wikidata": null,
+   "sources": [
+    {
+     "dataset": "Microsoft",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture",
+     "license": "CDLA-Permissive-2.0"
+    },
+    {
+     "dataset": "Overture-signals",
+     "license": "CDLA-Permissive-2.0"
+    }
+   ],
+   "contacts": 2,
+   "lng": -73.98407745361328,
+   "lat": 40.75734329223633,
+   "name_en": []
+  }
+ ]
+}

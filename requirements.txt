@@ -1,0 +1,26 @@
+# Pinned with hashes (pip install --require-hashes -r requirements.txt). Stable releases only, at least two weeks old;
+# bump deliberately, re-run the tests, and take each new hash from the package's PyPI page. Wheels listed: Linux
+# x86_64 (the workflow, CPython 3.12) and macOS arm64 and x86_64 (local builds).
+duckdb==1.4.5 \
+    --hash=sha256:aa294d028c149ca21110e366eaffcb4fc9ab11d7d203d50f7bc49a07ab34b960 \
+    --hash=sha256:07328a3e3a52221bd13c7dfc2f072be4fae84d42a5ef272d6fd497cda43e375f \
+    --hash=sha256:c08999ed92ac66caecfc3945dd7184fdc145570e56ec5af6ec4dd84f1e1bab8c
+apsw==3.53.2.0 \
+    --hash=sha256:73163b53467433cd68e7cb7bee65b55fab63f6744be1653171c276fdc68c874c \
+    --hash=sha256:b9f3674889cf74e10da4db24f69d1f091d73ab35dd59655e71b4041e8fd3e90f \
+    --hash=sha256:2f9661e54199c06fe69d5b0169338e4ca7699a837fa7ea764c678570a3a05627
+rapidfuzz==3.14.5 \
+    --hash=sha256:48bee0b91bebfaec41e1081e351000659ab7570cc4598d617aa04d5bf827f9e6 \
+    --hash=sha256:1e910eebca9fd0eba245c0555e764597e8a0cccb673a92da2dc2397050725f48 \
+    --hash=sha256:0d3378f471ef440473a396ce2f8e97ee12f89a78b495540e0a5617bbfe895638
+pytest==9.0.3 \
+    --hash=sha256:2c5efc453d45394fdd706ade797c0a81091eccd1d6e4bccfcd476e2b8e0ab5d9
+# pytest's dependencies
+iniconfig==2.3.0 \
+    --hash=sha256:f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12
+packaging==26.3 \
+    --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
+pluggy==1.6.0 \
+    --hash=sha256:e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746
+pygments==2.21.0 \
+    --hash=sha256:2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9

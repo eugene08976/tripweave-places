@@ -1,0 +1,227 @@
+name: Build places
+
+# Every Wednesday at 12:17 UTC (off the hour: GitHub delays or drops jobs scheduled on the hour), and by hand.
+on:
+  schedule:
+    - cron: "17 12 * * 3"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Build even if this Overture release is already published"
+        type: boolean
+        default: false
+      allow_count_change:
+        description: "Publish even if a region's row count moved more than 15% (look at the numbers first)"
+        type: boolean
+        default: false
+
+# Nothing by default; each job asks for what it needs. The build job runs third-party code (pip packages, DuckDB and
+# its httpfs extension) with a read-only token and no stored git credentials. Only the publish and record jobs can
+# write, and they run nothing but gh, git and the standard Python library.
+permissions: {}
+
+concurrency:
+  group: build-places
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    permissions:
+      contents: read
+    outputs:
+      result: ${{ steps.build.outputs.result }}
+      tag: ${{ steps.build.outputs.tag }}
+      release: ${{ steps.plan.outputs.release }}
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install
+        run: python -m pip install --require-hashes -r requirements.txt
+
+      - name: Test
+        run: python -m pytest -q tests
+
+      # extract.latest_release() only returns names like 2026-09-23.1 (checked), so the value is safe in the outputs.
+      - name: Find the release and build number
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rel=$(python -c 'import sys; sys.path.insert(0, "build"); import extract; print(extract.latest_release())')
+          n=$(gh release list --repo "$GITHUB_REPOSITORY" --limit 200 --json tagName \
+                -q "[.[] | select(.tagName | startswith(\"places-$rel-b\"))] | length")
+          echo "release=$rel" >> "$GITHUB_OUTPUT"
+          echo "number=$((n + 1))" >> "$GITHUB_OUTPUT"
+          echo "Overture latest: $rel, build number $((n + 1))"
+
+      - name: Build and verify
+        id: build
+        env:
+          RELEASE: ${{ steps.plan.outputs.release }}
+          NUMBER: ${{ steps.plan.outputs.number }}
+          FORCE: ${{ inputs.force }}
+          ALLOW_COUNT_CHANGE: ${{ inputs.allow_count_change }}
+        run: |
+          args=(--release "$RELEASE" --build-number "$NUMBER" --threads 4 --memory 6GB)
+          if [ "$FORCE" = "true" ]; then args+=(--force); fi
+          if [ "$ALLOW_COUNT_CHANGE" = "true" ]; then args+=(--allow-count-change); fi
+          python build/build.py "${args[@]}"
+
+      - name: Hand the release files to the publish job
+        if: steps.build.outputs.result == 'built'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-files
+          path: out/
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
+
+      - name: Hand the status and labels to the record job
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: record
+          path: |
+            out/status.json
+            labels/brands.json
+            build/smoke.json
+          retention-days: 7
+          if-no-files-found: ignore
+
+  publish:
+    needs: build
+    if: needs.build.outputs.result == 'built'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ needs.build.outputs.tag }}
+      REL: ${{ needs.build.outputs.release }}
+    steps:
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: release-files
+          path: out
+
+      - name: Publish (draft, upload, manifest last, then publish)
+        run: |
+          [[ "$TAG" =~ ^places-[0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]+-b[0-9]+$ ]] || { echo "::error::bad tag"; exit 1; }
+          python3 - <<'EOF' > notes.md
+          import json
+          s = json.load(open("out/status.json"))
+          print(f"Overture Maps release {s['release']}. Files: " + ", ".join(
+              f"{k} ({v['rows']:,} rows, {v['bytes'] / 1e6:.1f} MB)" for k, v in s["files"].items()) + ".")
+          print()
+          print("Places © Overture Maps Foundation. See ATTRIBUTION.md and the licence files.")
+          EOF
+          # a draft of this tag left by an earlier failed run goes first
+          if [ "$(gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json isDraft -q .isDraft 2>/dev/null)" = "true" ]; then
+            gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --yes
+          fi
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" \
+            --title "Places $REL (build ${TAG##*-b})" --notes-file notes.md
+          drop_draft() { gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --yes || true; exit 1; }
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" \
+            out/bali.sqlite out/taiwan.sqlite out/us.sqlite \
+            out/ATTRIBUTION.md out/CDLA-Permissive-2.0.txt out/Apache-2.0.txt out/foursquare-NOTICE.txt || drop_draft
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" out/manifest.json || drop_draft
+          gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --draft=false --latest || drop_draft
+
+      - name: Keep the last 3 releases; delete drafts older than a day
+        run: |
+          gh release list --repo "$GITHUB_REPOSITORY" --limit 200 --exclude-drafts --json tagName,createdAt \
+            -q '[.[] | select(.tagName | startswith("places-"))] | sort_by(.createdAt) | reverse | .[3:] | .[].tagName' |
+          while read -r old; do
+            echo "deleting $old"
+            gh release delete "$old" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag
+          done
+          cutoff=$(date -u -d '1 day ago' +%Y-%m-%dT%H:%M:%SZ)
+          gh release list --repo "$GITHUB_REPOSITORY" --limit 200 --json tagName,isDraft,createdAt \
+            -q "[.[] | select(.isDraft and (.tagName | startswith(\"places-\")) and .createdAt < \"$cutoff\")] | .[].tagName" |
+          while read -r old; do
+            echo "deleting draft $old"
+            gh release delete "$old" --repo "$GITHUB_REPOSITORY" --yes
+          done
+
+  # One line in builds.json per run, with the publish outcome. The commit also stops GitHub from switching off the
+  # schedule after 60 days without activity, so a push that never lands fails the run (and GitHub sends an email).
+  record:
+    needs: [build, publish]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        continue-on-error: true
+        with:
+          name: record
+          path: record
+
+      - name: Record the run
+        env:
+          BUILD_JOB: ${{ needs.build.result }}
+          PUBLISH_JOB: ${{ needs.publish.result }}
+          RELEASE: ${{ needs.build.outputs.release }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'EOF'
+          import datetime, json, os, re, shutil
+          try:
+              s = json.load(open("record/out/status.json"))
+          except Exception:
+              s = {"result": "failed", "reason": f"the build stopped before writing a status (build job: {os.environ['BUILD_JOB']})"}
+          result = s.get("result", "failed")
+          if result == "built" and os.environ["PUBLISH_JOB"] != "success":
+              result, s["reason"] = "publish_failed", f"built, but the publish job ended with {os.environ['PUBLISH_JOB']}"
+          release = s.get("release") or os.environ.get("RELEASE") or None
+          if release and not re.match(r"^\d{4}-\d{2}-\d{2}\.\d+$", str(release)):
+              release = None
+          line = {"date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+                  "overture_latest": release, "result": result, "tag": s.get("tag") if result == "built" else None,
+                  "run": os.environ["RUN_ID"]}
+          if result != "built" and s.get("reason"):
+              line["reason"] = str(s["reason"])[:300]
+          # the labels and smoke cases the build refreshed
+          for p in ("labels/brands.json", "build/smoke.json"):
+              if os.path.exists(os.path.join("record", p)):
+                  shutil.copyfile(os.path.join("record", p), p)
+          try:
+              runs = json.load(open("builds.json"))
+          except Exception:
+              runs = []
+          runs.append(line)
+          with open("builds.json", "w") as f:
+              json.dump(runs, f, indent=1)
+              f.write("\n")
+          print(line)
+          EOF
+          rm -rf record
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add builds.json labels/brands.json build/smoke.json
+          git commit -q -m "Build record $(date -u +%Y-%m-%d): $(python3 -c 'import json; print(json.load(open("builds.json"))[-1]["result"])')"
+          pushed=0
+          for i in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            git pull --rebase -q || true
+          done
+          [ "$pushed" = 1 ] || { echo "::error::the build record could not be pushed"; exit 1; }

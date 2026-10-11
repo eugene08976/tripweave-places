@@ -1,0 +1,1884 @@
+{
+ "source": "map-providers coverage study (2026-10-10, 86 places) and the owner's six Bali places",
+ "owner_trip_centres": [
+  [
+   -8.6478,
+   115.1385
+  ],
+  [
+   -8.8149,
+   115.0886
+  ]
+ ],
+ "owner_six": [
+  {
+   "id": "bambu-fitness",
+   "name": "Bambu Fitness",
+   "queries": [
+    "bambu fitness",
+    "bambu"
+   ],
+   "primary": "bambu fitness",
+   "accept": "bambu",
+   "truths": [
+    [
+     -8.81163,
+     115.11396
+    ]
+   ]
+  },
+  {
+   "id": "finns",
+   "name": "Finn's Beach Club",
+   "queries": [
+    "finns",
+    "finn's beach club"
+   ],
+   "primary": "finns",
+   "accept": "finn",
+   "truths": [
+    [
+     -8.66695,
+     115.13923
+    ]
+   ]
+  },
+  {
+   "id": "santanera",
+   "name": "Santanera",
+   "queries": [
+    "santanera"
+   ],
+   "primary": "santanera",
+   "accept": "santanera",
+   "truths": [
+    [
+     -8.65184,
+     115.13109
+    ]
+   ]
+  },
+  {
+   "id": "revolver",
+   "name": "Revolver Espresso Seminyak",
+   "queries": [
+    "revolver",
+    "revolver espresso"
+   ],
+   "primary": "revolver",
+   "accept": "revolver",
+   "truths": [
+    [
+     -8.68426,
+     115.15796
+    ]
+   ]
+  },
+  {
+   "id": "sia",
+   "name": "SIA - Grill & Seafood Bar",
+   "queries": [
+    "sia grill",
+    "SIA-Grill & Seafoods",
+    "sia"
+   ],
+   "primary": "sia grill",
+   "accept": "\\bsia\\b",
+   "truths": [
+    [
+     -8.6536,
+     115.13773
+    ]
+   ]
+  },
+  {
+   "id": "obsidian",
+   "name": "OBSIDIAN GYM",
+   "queries": [
+    "obsidian gym",
+    "obsid",
+    "obsidian"
+   ],
+   "primary": "obsidian gym",
+   "accept": "obsidian",
+   "truths": [
+    [
+     -8.63257,
+     115.13671
+    ],
+    [
+     -8.6398,
+     115.1361
+    ]
+   ]
+  }
+ ],
+ "places": [
+  {
+   "id": "tanah-lot",
+   "group": "bali_famous",
+   "area": "Tabanan",
+   "centre": [
+    -8.6212,
+    115.0868
+   ],
+   "name": "Tanah Lot",
+   "aliases": [
+    "Tanah Lot Temple"
+   ],
+   "local_names": [
+    "Pura Tanah Lot"
+   ],
+   "truth": [
+    -8.621139,
+    115.08675
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "uluwatu-temple",
+   "group": "bali_famous",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Uluwatu Temple",
+   "aliases": [],
+   "local_names": [
+    "Pura Luhur Uluwatu",
+    "Pura Uluwatu"
+   ],
+   "truth": [
+    -8.82939,
+    115.084405
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "tegallalang",
+   "group": "bali_famous",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Tegallalang Rice Terrace",
+   "aliases": [
+    "Tegalalang Rice Terrace"
+   ],
+   "local_names": [
+    "Ceking Rice Terrace",
+    "Sawah Terasering Tegallalang"
+   ],
+   "truth": [
+    -8.430591,
+    115.279137
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "monkey-forest",
+   "group": "bali_famous",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Sacred Monkey Forest Sanctuary",
+   "aliases": [
+    "Ubud Monkey Forest",
+    "Monkey Forest"
+   ],
+   "local_names": [
+    "Mandala Suci Wenara Wana",
+    "Wenara Wana"
+   ],
+   "truth": [
+    -8.518822,
+    115.258383
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "ubud-palace",
+   "group": "bali_famous",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Ubud Palace",
+   "aliases": [],
+   "local_names": [
+    "Puri Saren Agung",
+    "Puri Saren Ubud"
+   ],
+   "truth": [
+    -8.5068,
+    115.2626
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "ubud-art-market",
+   "group": "bali_famous",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Ubud Art Market",
+   "aliases": [],
+   "local_names": [
+    "Pasar Seni Ubud",
+    "Pasar Ubud"
+   ],
+   "truth": [
+    -8.506938,
+    115.263069
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "local"
+  },
+  {
+   "id": "tirta-empul",
+   "group": "bali_famous",
+   "area": "Tampaksiring",
+   "centre": [
+    -8.4153,
+    115.3155
+   ],
+   "name": "Tirta Empul Temple",
+   "aliases": [
+    "Tirta Empul",
+    "Tirta Empul Holy Water Temple"
+   ],
+   "local_names": [
+    "Pura Tirta Empul"
+   ],
+   "truth": [
+    -8.41639,
+    115.315
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "padang-padang",
+   "group": "bali_famous",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Padang Padang Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Padang Padang",
+    "Labuan Sait"
+   ],
+   "truth": [
+    -8.81114,
+    115.1012
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "bingin",
+   "group": "bali_famous",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Bingin Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Bingin"
+   ],
+   "truth": [
+    -8.80566,
+    115.11307
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "melasti",
+   "group": "bali_famous",
+   "area": "Ungasan",
+   "centre": [
+    -8.83,
+    115.17
+   ],
+   "name": "Melasti Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Melasti"
+   ],
+   "truth": [
+    -8.84823,
+    115.15759
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "echo-beach",
+   "group": "bali_famous",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Echo Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Batu Mejan",
+    "Pantai Echo"
+   ],
+   "truth": [
+    -8.655087,
+    115.125088
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "miss"
+  },
+  {
+   "id": "batu-bolong",
+   "group": "bali_famous",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Batu Bolong Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Batu Bolong"
+   ],
+   "truth": [
+    -8.6593,
+    115.1305
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "local"
+  },
+  {
+   "id": "kuta-beach",
+   "group": "bali_famous",
+   "area": "Kuta",
+   "centre": [
+    -8.7184,
+    115.1686
+   ],
+   "name": "Kuta Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Kuta"
+   ],
+   "truth": [
+    -8.7184,
+    115.1686
+   ],
+   "tol_m": 1000,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "double-six",
+   "group": "bali_famous",
+   "area": "Seminyak",
+   "centre": [
+    -8.6913,
+    115.1683
+   ],
+   "name": "Double Six Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Double Six"
+   ],
+   "truth": [
+    -8.6963,
+    115.1622
+   ],
+   "tol_m": 1000,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "gwk",
+   "group": "bali_famous",
+   "area": "Jimbaran",
+   "centre": [
+    -8.79,
+    115.16
+   ],
+   "name": "Garuda Wisnu Kencana Cultural Park",
+   "aliases": [
+    "GWK Cultural Park",
+    "GWK"
+   ],
+   "local_names": [
+    "Taman Budaya Garuda Wisnu Kencana"
+   ],
+   "truth": [
+    -8.8104,
+    115.1676
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "campuhan",
+   "group": "bali_famous",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Campuhan Ridge Walk",
+   "aliases": [],
+   "local_names": [
+    "Bukit Campuhan",
+    "Jalan Campuhan Ridge"
+   ],
+   "truth": [
+    -8.50378,
+    115.2548
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "goa-gajah",
+   "group": "bali_famous",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Goa Gajah",
+   "aliases": [
+    "Elephant Cave"
+   ],
+   "local_names": [
+    "Pura Goa Gajah"
+   ],
+   "truth": [
+    -8.523389,
+    115.286333
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "dps-airport",
+   "group": "bali_famous",
+   "area": "Kuta",
+   "centre": [
+    -8.7184,
+    115.1686
+   ],
+   "name": "Ngurah Rai International Airport",
+   "aliases": [
+    "Bali Airport",
+    "Denpasar Airport"
+   ],
+   "local_names": [
+    "Bandar Udara Internasional I Gusti Ngurah Rai"
+   ],
+   "truth": [
+    -8.748056,
+    115.1675
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "jimbaran-beach",
+   "group": "bali_famous",
+   "area": "Jimbaran",
+   "centre": [
+    -8.79,
+    115.16
+   ],
+   "name": "Jimbaran Beach",
+   "aliases": [],
+   "local_names": [
+    "Pantai Jimbaran",
+    "Pantai Muaya"
+   ],
+   "truth": [
+    -8.779,
+    115.165
+   ],
+   "tol_m": 1000,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "crate",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Crate Cafe",
+   "aliases": [
+    "Crate"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.648671,
+    115.1372
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "milk-madu",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Milk & Madu",
+   "aliases": [
+    "Milk and Madu"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.660896,
+    115.145715
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "shady-shack",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "The Shady Shack",
+   "aliases": [
+    "Shady Shack"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.651532,
+    115.131486
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "penny-lane",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Penny Lane",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    -8.653333,
+    115.130647
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "warung-bu-mi",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Warung Bu Mi",
+   "aliases": [
+    "Bu Mi"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.651105,
+    115.135411
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "gooseberry",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Gooseberry",
+   "aliases": [
+    "Gooseberry Restaurant",
+    "Gooseberry French Restaurant"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.812095,
+    115.118678
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "the-lawn",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "The Lawn",
+   "aliases": [
+    "The Lawn Canggu"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.658506,
+    115.129696
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "la-brisa",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "La Brisa",
+   "aliases": [
+    "La Brisa Bali"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.654481,
+    115.124895
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "single-fin",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Single Fin",
+   "aliases": [
+    "Single Fin Bali"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.814915,
+    115.088923
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "sundays",
+   "group": "bali_tail",
+   "area": "Ungasan",
+   "centre": [
+    -8.83,
+    115.17
+   ],
+   "name": "Sundays Beach Club",
+   "aliases": [
+    "Sundays"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.847334,
+    115.151056
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "savaya",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Savaya",
+   "aliases": [
+    "Savaya Bali"
+   ],
+   "local_names": [
+    "OMNIA Dayclub"
+   ],
+   "truth": [
+    -8.846235,
+    115.140777
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "el-kabron",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "El Kabron",
+   "aliases": [
+    "El Kabron Bali"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.801878,
+    115.117334
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "drifter",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Drifter Surf Shop",
+   "aliases": [
+    "Drifter Cafe",
+    "Drifter"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.814933,
+    115.112302
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "miss"
+  },
+  {
+   "id": "suka-espresso",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Suka Espresso",
+   "aliases": [
+    "Suka"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.816378,
+    115.096046
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "revolver",
+   "group": "bali_tail",
+   "area": "Seminyak",
+   "centre": [
+    -8.6913,
+    115.1683
+   ],
+   "name": "Revolver Espresso",
+   "aliases": [
+    "Revolver"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.684336,
+    115.157932
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "locavore-nxt",
+   "group": "bali_tail",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Locavore NXT",
+   "aliases": [
+    "Locavore"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.542413,
+    115.257259
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "sisterfields",
+   "group": "bali_tail",
+   "area": "Seminyak",
+   "centre": [
+    -8.6913,
+    115.1683
+   ],
+   "name": "Sisterfields",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    -8.683009,
+    115.157537
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "potato-head",
+   "group": "bali_tail",
+   "area": "Seminyak",
+   "centre": [
+    -8.6913,
+    115.1683
+   ],
+   "name": "Potato Head Beach Club",
+   "aliases": [
+    "Potato Head"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.679273,
+    115.150185
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "finns",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Finns Beach Club",
+   "aliases": [
+    "Finns"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.666874,
+    115.139199
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "atlas",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Atlas Beach Club",
+   "aliases": [
+    "Atlas",
+    "Atlas Super Club",
+    "Atlas Beach Fest"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.665,
+    115.1385
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "tropical-nomad",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Tropical Nomad",
+   "aliases": [
+    "Tropical Nomad Coworking"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.652617,
+    115.137989
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "dojo",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Dojo Bali",
+   "aliases": [
+    "Dojo Coworking"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.653369,
+    115.126649
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "beachwalk",
+   "group": "bali_tail",
+   "area": "Kuta",
+   "centre": [
+    -8.7184,
+    115.1686
+   ],
+   "name": "Beachwalk Shopping Center",
+   "aliases": [
+    "Beachwalk"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.716836,
+    115.169283
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "menega",
+   "group": "bali_tail",
+   "area": "Jimbaran",
+   "centre": [
+    -8.79,
+    115.16
+   ],
+   "name": "Menega Cafe",
+   "aliases": [
+    "Menega"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.780716,
+    115.164392
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "ulu-cliffhouse",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Ulu Cliffhouse",
+   "aliases": [
+    "Ulu Cliff House"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.814172,
+    115.091576
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "clear-cafe",
+   "group": "bali_tail",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Clear Cafe",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    -8.509245,
+    115.26495
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "naughty-nuris",
+   "group": "bali_tail",
+   "area": "Ubud",
+   "centre": [
+    -8.5069,
+    115.2625
+   ],
+   "name": "Naughty Nuri's",
+   "aliases": [
+    "Naughty Nuris",
+    "Naughty Nuri's Warung"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.4934,
+    115.2532
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "mexicola",
+   "group": "bali_tail",
+   "area": "Seminyak",
+   "centre": [
+    -8.6913,
+    115.1683
+   ],
+   "name": "Motel Mexicola",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    -8.682183,
+    115.153839
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "kudeta",
+   "group": "bali_tail",
+   "area": "Seminyak",
+   "centre": [
+    -8.6913,
+    115.1683
+   ],
+   "name": "Ku De Ta",
+   "aliases": [
+    "KuDeTa",
+    "Ku De Ta Bali"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.687143,
+    115.154637
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "body-factory",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "Body Factory Bali",
+   "aliases": [
+    "Body Factory"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.65609,
+    115.134846
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "bwork",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "B Work Bali",
+   "aliases": [
+    "BWork"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.653897,
+    115.135201
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "como-uma-canggu",
+   "group": "bali_tail",
+   "area": "Canggu",
+   "centre": [
+    -8.6478,
+    115.1385
+   ],
+   "name": "COMO Uma Canggu",
+   "aliases": [
+    "Uma Canggu"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.655594,
+    115.126483
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "alila-uluwatu",
+   "group": "bali_tail",
+   "area": "Uluwatu",
+   "centre": [
+    -8.8149,
+    115.1094
+   ],
+   "name": "Alila Villas Uluwatu",
+   "aliases": [
+    "Alila Uluwatu"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.84424,
+    115.13811
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "four-seasons-jimbaran",
+   "group": "bali_tail",
+   "area": "Jimbaran",
+   "centre": [
+    -8.79,
+    115.16
+   ],
+   "name": "Four Seasons Resort Bali at Jimbaran Bay",
+   "aliases": [
+    "Four Seasons Jimbaran"
+   ],
+   "local_names": [],
+   "truth": [
+    -8.784486,
+    115.158958
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "torre-belem",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Belém Tower",
+   "aliases": [
+    "Belem Tower"
+   ],
+   "local_names": [
+    "Torre de Belém"
+   ],
+   "truth": [
+    38.691667,
+    -9.215833
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "jeronimos",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Jerónimos Monastery",
+   "aliases": [
+    "Jeronimos Monastery"
+   ],
+   "local_names": [
+    "Mosteiro dos Jerónimos"
+   ],
+   "truth": [
+    38.697846,
+    -9.205601
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "castelo",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "São Jorge Castle",
+   "aliases": [
+    "Sao Jorge Castle",
+    "St. George's Castle"
+   ],
+   "local_names": [
+    "Castelo de São Jorge"
+   ],
+   "truth": [
+    38.7139,
+    -9.1335
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "praca-comercio",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Praça do Comércio",
+   "aliases": [
+    "Praca do Comercio",
+    "Commerce Square"
+   ],
+   "local_names": [
+    "Terreiro do Paço"
+   ],
+   "truth": [
+    38.707139,
+    -9.133319
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "time-out-market",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Time Out Market Lisboa",
+   "aliases": [
+    "Time Out Market"
+   ],
+   "local_names": [
+    "Mercado da Ribeira"
+   ],
+   "truth": [
+    38.707089,
+    -9.145718
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "lx-factory",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "LX Factory",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    38.70351,
+    -9.17882
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "pasteis-belem",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Pastéis de Belém",
+   "aliases": [
+    "Pasteis de Belem"
+   ],
+   "local_names": [
+    "Antiga Confeitaria de Belém"
+   ],
+   "truth": [
+    38.697509,
+    -9.203228
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "manteigaria",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Manteigaria",
+   "aliases": [
+    "Manteigaria Chiado"
+   ],
+   "local_names": [],
+   "truth": [
+    38.71078,
+    -9.144055
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit~"
+  },
+  {
+   "id": "senhora-monte",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Miradouro da Senhora do Monte",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    38.718889,
+    -9.132778
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "santa-luzia",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Miradouro de Santa Luzia",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    38.711689,
+    -9.130209
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "sao-pedro-alcantara",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Miradouro de São Pedro de Alcântara",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    38.715278,
+    -9.144444
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "santa-justa",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Elevador de Santa Justa",
+   "aliases": [
+    "Santa Justa Lift"
+   ],
+   "local_names": [],
+   "truth": [
+    38.71194,
+    -9.13917
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "tram28-martim-moniz",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Martim Moniz",
+   "aliases": [
+    "Martim Moniz tram stop"
+   ],
+   "local_names": [],
+   "truth": [
+    38.716812,
+    -9.135749
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "tram28-prazeres",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Prazeres",
+   "aliases": [
+    "Prazeres tram stop",
+    "Campo de Ourique (Prazeres)",
+    "Prazeres (tram)"
+   ],
+   "local_names": [],
+   "truth": [
+    38.7142,
+    -9.1694
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "off"
+  },
+  {
+   "id": "ramiro",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Cervejaria Ramiro",
+   "aliases": [
+    "Ramiro"
+   ],
+   "local_names": [],
+   "truth": [
+    38.720267,
+    -9.135706
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "cevicheria",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "A Cevicheria",
+   "aliases": [
+    "Cevicheria"
+   ],
+   "local_names": [],
+   "truth": [
+    38.716013,
+    -9.147498
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "o-trevo",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "O Trevo",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    38.710884,
+    -9.143051
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "park-bar",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Park",
+   "aliases": [
+    "Park Bar",
+    "Park Rooftop"
+   ],
+   "local_names": [],
+   "truth": [
+    38.711146,
+    -9.147794
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "ginjinha",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "A Ginjinha",
+   "aliases": [
+    "Ginjinha Espinheira"
+   ],
+   "local_names": [],
+   "truth": [
+    38.714714,
+    -9.139097
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "brasileira",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "A Brasileira",
+   "aliases": [
+    "Café A Brasileira"
+   ],
+   "local_names": [],
+   "truth": [
+    38.710639,
+    -9.142068
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "fabrica-coffee",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Fábrica Coffee Roasters",
+   "aliases": [
+    "Fabrica Coffee Roasters"
+   ],
+   "local_names": [],
+   "truth": [
+    38.71761,
+    -9.141678
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "oceanario",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Oceanário de Lisboa",
+   "aliases": [
+    "Lisbon Oceanarium"
+   ],
+   "local_names": [],
+   "truth": [
+    38.763526,
+    -9.09375
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "taberna-flores",
+   "group": "lisbon",
+   "area": "Lisbon",
+   "centre": [
+    38.7223,
+    -9.1393
+   ],
+   "name": "Taberna da Rua das Flores",
+   "aliases": [],
+   "local_names": [],
+   "truth": [
+    38.710123,
+    -9.143572
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "lello",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Livraria Lello",
+   "aliases": [
+    "Lello Bookstore",
+    "Lello & Irmão"
+   ],
+   "local_names": [],
+   "truth": [
+    41.146807,
+    -8.614827
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "majestic",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Majestic Café",
+   "aliases": [
+    "Majestic Cafe"
+   ],
+   "local_names": [],
+   "truth": [
+    41.147137,
+    -8.606599
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "sao-bento",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "São Bento Station",
+   "aliases": [
+    "Sao Bento",
+    "São Bento Train Station"
+   ],
+   "local_names": [
+    "Estação de São Bento",
+    "Estação Ferroviária de Porto-São Bento"
+   ],
+   "truth": [
+    41.145417,
+    -8.610403
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "ponte-luis",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Dom Luís I Bridge",
+   "aliases": [
+    "Luis I Bridge",
+    "Ponte Luiz I"
+   ],
+   "local_names": [
+    "Ponte Luís I",
+    "Ponte Dom Luís I"
+   ],
+   "truth": [
+    41.139722,
+    -8.609444
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "clerigos",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Clérigos Tower",
+   "aliases": [
+    "Clerigos Tower",
+    "Clérigos Church"
+   ],
+   "local_names": [
+    "Torre dos Clérigos",
+    "Igreja dos Clérigos"
+   ],
+   "truth": [
+    41.145871,
+    -8.61401
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "cafe-santiago",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Café Santiago",
+   "aliases": [
+    "Cafe Santiago"
+   ],
+   "local_names": [],
+   "truth": [
+    41.146472,
+    -8.60487
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "bolhao",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Mercado do Bolhão",
+   "aliases": [
+    "Bolhao Market"
+   ],
+   "local_names": [],
+   "truth": [
+    41.149167,
+    -8.606944
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "ribeira",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Cais da Ribeira",
+   "aliases": [
+    "Ribeira",
+    "Praça da Ribeira"
+   ],
+   "local_names": [],
+   "truth": [
+    41.140711,
+    -8.613053
+   ],
+   "tol_m": 600,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "taylors",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Taylor's Port",
+   "aliases": [
+    "Taylor's"
+   ],
+   "local_names": [],
+   "truth": [
+    41.13425,
+    -8.614345
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  },
+  {
+   "id": "manteigaria-porto",
+   "group": "lisbon",
+   "area": "Porto",
+   "centre": [
+    41.1579,
+    -8.6291
+   ],
+   "name": "Manteigaria Porto",
+   "aliases": [
+    "Manteigaria"
+   ],
+   "local_names": [],
+   "truth": [
+    41.145859,
+    -8.612963
+   ],
+   "tol_m": 300,
+   "photon_2026_10_10": "hit"
+  }
+ ]
+}

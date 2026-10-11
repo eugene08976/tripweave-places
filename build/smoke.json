@@ -1,0 +1,59 @@
+{
+ "note": "Smoke cases published in every manifest; the server runs them through its own lookup before it swaps in new files. An expect of null is picked by the next build and should then be committed.",
+ "cases": [
+  {
+   "region": "bali",
+   "q": "sia grill",
+   "at": [
+    -8.6478,
+    115.1385
+   ],
+   "expect": "SIA - Grill & Seafood Bar"
+  },
+  {
+   "region": "bali",
+   "q": "obsidian gym",
+   "at": [
+    -8.6478,
+    115.1385
+   ],
+   "expect": "Obsidian Gym Bali"
+  },
+  {
+   "region": "bali",
+   "q": "obsid",
+   "at": [
+    -8.6478,
+    115.1385
+   ],
+   "expect": "Obsidian Gym Bali"
+  },
+  {
+   "region": "taiwan",
+   "q": "鼎泰豐",
+   "at": [
+    25.0336,
+    121.5648
+   ],
+   "expect": "鼎泰豐"
+  },
+  {
+   "region": "us",
+   "q": "joe's pizza",
+   "at": [
+    40.758,
+    -73.9855
+   ],
+   "expect": "Joe's Pizza"
+  },
+  {
+   "region": "us",
+   "q": "joes",
+   "at": [
+    44.9778,
+    -93.265
+   ],
+   "expect": "Trader Joe's"
+  }
+ ]
+}
