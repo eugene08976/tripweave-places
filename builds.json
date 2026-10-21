@@ -13,5 +13,13 @@
   "tag": null,
   "run": "38603932962",
   "reason": "Overture 2026-09-23.1 is already published as places-2026-09-23.1-b1"
+ },
+ {
+  "date": "2026-10-21T17:09Z",
+  "overture_latest": "2026-09-23.1",
+  "result": "skipped",
+  "tag": null,
+  "run": "39641090840",
+  "reason": "Overture 2026-09-23.1 is already published as places-2026-09-23.1-b1"
  }
 ]
