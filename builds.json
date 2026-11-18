@@ -44,5 +44,12 @@
   "tag": null,
   "run": "43088314855",
   "reason": "Overture 2026-10-21.0 is already published as places-2026-10-21.0-b1"
+ },
+ {
+  "date": "2026-11-18T21:02Z",
+  "overture_latest": "2026-11-18.0",
+  "result": "built",
+  "tag": "places-2026-11-18.0-b1",
+  "run": "44391117150"
  }
 ]
