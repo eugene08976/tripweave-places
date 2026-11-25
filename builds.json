@@ -51,5 +51,13 @@
   "result": "built",
   "tag": "places-2026-11-18.0-b1",
   "run": "44391117150"
+ },
+ {
+  "date": "2026-11-25T21:39Z",
+  "overture_latest": "2026-11-18.0",
+  "result": "skipped",
+  "tag": null,
+  "run": "45706129808",
+  "reason": "Overture 2026-11-18.0 is already published as places-2026-11-18.0-b1"
  }
 ]
